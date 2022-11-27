@@ -11,7 +11,7 @@ function presupuesto() {
 }
 presupuesto()
 
-let resultadoSuma = parseInt(prompt("Ingrese el resultado de la suma"))
+let resultadoSuma = parseInt(prompt("Ingrese el resultado de la suma del gasto total"))
 
 if (fondosTotales >= resultadoSuma) {
     alert("Tiene suficiente dinero para demostrar")
@@ -22,4 +22,10 @@ else {
 
 let r = fondosTotales - resultadoSuma
 
-alert(`el restante de dinero es de: ${r}`);
+alert(`Su dinero restante es de: ${r}`);
+
+let d = 0;
+do {
+    alert(`Faltan ${d} semanas para su viaje`);
+    d++;
+} while (d <= 4);
