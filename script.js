@@ -1,4 +1,19 @@
 
+
+const continentes = [
+    { nombre: "America" },
+    {nombre: "Africa"},
+    {nombre: "Europa"},
+    {nombre: "Asia"},
+    {nombre: "Oceanía"},
+]
+
+
+/* for (let i = 0; i < 4; i++) {
+    const element = continentes[i];
+} */
+
+
 fondosTotales = parseInt(prompt("¿Cuanto dinero posee?"))
 
 function presupuesto() {
@@ -17,7 +32,7 @@ if (fondosTotales >= resultadoSuma) {
     alert("Tiene suficiente dinero para demostrar")
 }
 else {
-    alert("Su visa será rechazada por saldo insuficiente")
+    alert("No tiene saldo suficiente para solventar su viaje")
 }
 
 let r = fondosTotales - resultadoSuma
