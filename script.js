@@ -1,17 +1,25 @@
 
+class destino {
+    constructor(continente, pais) {
+        this.continente = continente;
+        this.pais = pais;
+    }
+}
 
-const continentes = [
-    { nombre: "America" },
-    {nombre: "Africa"},
-    {nombre: "Europa"},
-    {nombre: "Asia"},
-    {nombre: "Oceanía"},
-]
+const asia = new destino("Asia", "China");
+const america = new destino("America", "Argentina");
+const africa = new destino("Africa", "Uganda");
+const europa = new destino("Europa", "Italia");
+const oceania = new destino("Oceania", "Australia");
 
+const destinoDisponible = []
+destinoDisponible.push(asia)
+destinoDisponible.push(america)
+destinoDisponible.push(africa)
+destinoDisponible.push(europa)
+destinoDisponible.push(oceania)
 
-/* for (let i = 0; i < 4; i++) {
-    const element = continentes[i];
-} */
+console.log(destinoDisponible);
 
 
 fondosTotales = parseInt(prompt("¿Cuanto dinero posee?"))
