@@ -6,6 +6,8 @@ class destino {
     }
 }
 
+/* mi idea, mas adelante, es agregar 5 botones que desplieguen los paises disponibles por cada continente */
+
 const asia = new destino("Asia", "China");
 const america = new destino("America", "Argentina");
 const africa = new destino("Africa", "Uganda");
@@ -21,6 +23,12 @@ destinoDisponible.push(oceania)
 
 console.log(destinoDisponible);
 
+function filtrarDestinosPorContinente(destinos, continente) {
+    return destinos.filter(d => d.continente === continente);
+}
+
+const destinosEnAsia = filtrarDestinosPorContinente(destinoDisponible, 'Asia');
+console.log(destinosEnAsia);
 
 fondosTotales = parseInt(prompt("¿Cuanto dinero posee?"))
 
