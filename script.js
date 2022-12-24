@@ -7,7 +7,7 @@ class destino {
 }
 
 /* mi idea, mas adelante, es agregar 5 botones que desplieguen los paises disponibles por cada continente */
-
+ 
 const asia = new destino("Asia", "China");
 const america = new destino("America", "Argentina");
 const africa = new destino("Africa", "Uganda");
@@ -51,12 +51,12 @@ else {
     alert("No tiene saldo suficiente para solventar su viaje")
 }
 
-let r = fondosTotales - resultadoSuma
+let result = fondosTotales - resultadoSuma
 
 alert(`Su dinero restante es de: ${r}`);
 
-let d = 0;
+let semanas = 0;
 do {
-    alert(`Faltan ${d} semanas para su viaje`);
-    d++;
-} while (d <= 4);
+    alert(`Faltan ${semanas} semanas para su viaje`);
+    semanas++;
+} while (semanas <= 4);

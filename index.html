@@ -4,10 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculador de costos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="icon" href="./styles/img/plane_ico_svg.svg">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Costo de viaje</title>
 </head>
 <body>
+    <h1 class="title">Calculador de costos de viaje</h1>
+    <main>
+        <div class="buttonContainer">
+            <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    America
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Argentina</a></li>
+                    <li><a class="dropdown-item" href="#">Mexico</a></li>
+                    <li><a class="dropdown-item" href="#">Estados Unidos</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Europa
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Alemania</a></li>
+                    <li><a class="dropdown-item" href="#">Italia</a></li>
+                    <li><a class="dropdown-item" href="#">España</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Asia
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">China</a></li>
+                    <li><a class="dropdown-item" href="#">India</a></li>
+                    <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Africa
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Uganda</a></li>
+                    <li><a class="dropdown-item" href="#">Marruecos</a></li>
+                    <li><a class="dropdown-item" href="#">Egipto</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Oceania
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Australia</a></li>
+                    <li><a class="dropdown-item" href="#">Nueva Zelanda</a></li>
+                    <li><a class="dropdown-item" href="#">Fiji</a></li>
+                </ul>
+            </div>
+        </div>
+        <div></div>
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                    <label for="" class="form-label">Costo del vuelo</label>
+                    <input type="number" class="form-control" id="" >
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Costo de hospedaje</label>
+                    <input type="email" class="form-control" id="">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Gastos de transporte</label>
+                    <input type="number" class="form-control" id="">
+                </div>
 
-<script src="script.js"></script>
+                <div><!-- !alert de resultado --></div>
+
+            </form>
+            <div class="buttonFoot">
+                <button type="submit" class="btn btn-info">Calcular</button>
+            </div>
+        </div>
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- <script src="script.js"></script> -->
 </body>
 </html>
