@@ -1,63 +1,35 @@
-// !IMPORTANT eliminar todos los prompt, alert y clg
 
-function destino(continente, pais1, pais2, pais3) {
-    this.continente = continente;
-    this.pais1 = pais1;
-    this.pais2 = pais2;
-    this.pais1 = pais3;
+
+let fondosTotales = document.getElementById("fondosTotales")
+fondosTotales.addEventListener("submit", presupuesto)
+
+function presupuesto(e) {
+
+    e.preventDefault();
+
+    let budget = document.getElementById("budget").value
+    let vuelo = document.getElementById("vuelo").value
+    let hospedaje = document.getElementById("hospedaje").value
+    let transporte = document.getElementById("transporte").value
+
+    let suma = parseInt(vuelo) + parseInt(hospedaje) + parseInt(transporte)
+    let restante = budget - suma
+
+    mostrarAlerta(suma, restante)
 }
 
+function mostrarAlerta(suma, restante) {
+    let resultadoTotal = document.getElementById("resultadoTotal")
+    let mostrar = document.createElement("div");
 
- 
-const america = new destino("America", "Argentina", "México", "Estados Unidos");
-const europa = new destino("Europa", "Alemania", "Italia", "España");
-const asia = new destino("Asia", "China", "India", "Indonesia");
-const africa = new destino("Africa", "Uganda", "Marruecos", "Egipto");
-const oceania = new destino("Oceania", "Australia", "Nueva Zelanda", "Fiji");
+    mostrar.innerHTML = `
+    <div class="container-data">
+       <div class="alert alert-success" role="alert">
+         <h4>El gasto total del viaje es de $${suma}</h4>
+         <h4>Su dinero restante es de $${restante}</h4>
+       </div>
+       </div>
+    `
 
-const destinoDisponible = []
-destinoDisponible.push(asia)
-destinoDisponible.push(america)
-destinoDisponible.push(africa)
-destinoDisponible.push(europa)
-destinoDisponible.push(oceania)  
-
-console.log(destinoDisponible); // eliminar este clg
-
-function filtrarDestinosPorContinente(destinos, continente) {
-    return destinos.filter(d => d.continente === continente);
+    resultadoTotal.appendChild(mostrar)
 }
-
-const destinosEnAsia = filtrarDestinosPorContinente(destinoDisponible, 'Asia');
-console.log(destinosEnAsia); //eliminar este clg
-
-fondosTotales = parseInt(prompt("¿Cuanto dinero posee?"))
-
-function presupuesto() {
-    vuelo = parseInt(prompt("ingrese costo de su vuelo"));
-    hospedaje = parseInt(prompt("ingrese costo de su hospedaje"));
-    transporte = parseInt(prompt("ingrese costo de transporte"));
-    suma = vuelo + hospedaje + transporte;
-
-    alert("El gasto total del viaje es " + suma); // mostrar mensaje debajo de los primeros inputs
-}
-presupuesto()
-
-let resultadoSuma = parseInt(prompt("Ingrese el resultado de la suma del gasto total"))
-
-if (fondosTotales >= resultadoSuma) {
-    alert("Tiene suficiente dinero para demostrar")
-}
-else {
-    alert("No tiene saldo suficiente para solventar su viaje")
-}
-
-let result = fondosTotales - resultadoSuma
-
-alert(`Su dinero restante es de: ${r}`);
-
-let semanas = 0; // corregir este loop
-do {
-    alert(`Faltan ${semanas} semanas para su viaje`);
-    semanas++;
-} while (semanas <= 4);

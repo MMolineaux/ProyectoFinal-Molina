@@ -22,7 +22,7 @@ body {
     /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .dropdown {
@@ -33,6 +33,19 @@ body {
 main {
     background-color: rgba(255, 255, 255, 0.800);
     margin: 0 20px;
-    padding: 0 20px;
+    padding: 20px 20px;
     border-radius: 15px;
+}
+
+.buttonFoot {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+#resultadoTotal {
+    margin-top: 30px;
+}
+
+.container-data {
+    width: 500px;
 }
