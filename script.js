@@ -1,6 +1,11 @@
 fetch('./data.json')
   .then(response => response.json())
   .then(data => {
+    let storedResults = JSON.parse(sessionStorage.getItem('searchResults'));
+    if (storedResults) {
+      displayResults(storedResults);
+    }
+
     function buscarData(searchTerm, continent) {
       let resultados = [];
       if (continent === 'all') {
@@ -18,6 +23,7 @@ fetch('./data.json')
           }
         }
       }
+      sessionStorage.setItem('searchResults', JSON.stringify(results));
       return resultados;
     }
 
