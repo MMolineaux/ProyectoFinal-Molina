@@ -1,0 +1,41 @@
+{
+    "Africa": {
+        "countries": [
+            { "name": "Egipto", "capital": "Cairo" },
+            { "name": "Nigeria", "capital": "Abuja" },
+            { "name": "Sudafrica", "capital": "Pretoria" }
+        ]
+    },
+    "Asia": {
+        "countries": [
+            { "name": "China", "capital": "Beijing" },
+            { "name": "India", "capital": "Nueva Delhi" },
+            { "name": "Rusia", "capital": "Moscú" }
+        ]
+    },
+    "Europe": {
+        "countries": [
+            { "name": "Francia", "capital": "París" },
+            { "name": "Alemania", "capital": "Berlin" },
+            { "name": "Inglaterra", "capital": "Londres" }
+        ]
+    },
+    "America": {
+        "countries": [
+            { "name": "Canada", "capital": "Ottawa" },
+            { "name": "Mexico", "capital": "Ciudad de Mexico" },
+            { "name": "Estados Unidos", "capital": "Washington D.C." },
+            { "name": "Brasil", "capital": "Brasília" },
+            { "name": "Chile", "capital": "Santiago" },
+            { "name": "Colombia", "capital": "Bogotá" },
+            { "name": "Argentina", "capital": "Buenos Aires"}
+        ]
+    },
+    "Oceanía": {
+        "countries": [
+            { "name": "Australia", "capital": "Canberra" },
+            { "name": "Nueva Zelanda", "capital": "Wellington" },
+            { "name": "Papúa Nueva Guinea", "capital": "Puerto Moresby" }
+        ]
+    }
+}
