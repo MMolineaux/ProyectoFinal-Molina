@@ -13,7 +13,7 @@
             { "name": "Rusia", "capital": "Moscú" }
         ]
     },
-    "Europe": {
+    "Europa": {
         "countries": [
             { "name": "Francia", "capital": "París" },
             { "name": "Alemania", "capital": "Berlin" },
@@ -31,7 +31,7 @@
             { "name": "Argentina", "capital": "Buenos Aires"}
         ]
     },
-    "Oceanía": {
+    "Oceania": {
         "countries": [
             { "name": "Australia", "capital": "Canberra" },
             { "name": "Nueva Zelanda", "capital": "Wellington" },
