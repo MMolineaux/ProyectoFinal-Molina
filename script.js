@@ -7,24 +7,24 @@ fetch('./data.json')
     }
 
     function buscarData(searchTerm, continent) {
-      let resultados = [];
+      let results = [];
       if (continent === 'all') {
         for (let c in data) {
           for (let i = 0; i < data[c].countries.length; i++) {
             if (data[c].countries[i].name.toLowerCase().includes(searchTerm.toLowerCase())) {
-              resultados.push(data[c].countries[i]);
+              results.push(data[c].countries[i]);
             }
           }
         }
       } else {
         for (let i = 0; i < data[continent].countries.length; i++) {
           if (data[continent].countries[i].name.toLowerCase().includes(searchTerm.toLowerCase())) {
-            resultados.push(data[continent].countries[i]);
+            results.push(data[continent].countries[i]);
           }
         }
       }
       sessionStorage.setItem('searchResults', JSON.stringify(results));
-      return resultados;
+      return results;
     }
 
 
